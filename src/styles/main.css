@@ -31,8 +31,13 @@ body {
     justify-content: space-between;
 }
 
-.brandMenu .menuToggle {
+.brandMenu .menuToggle button {
+    border: none;
+	background: none;
+    width: 44px;
+    height: 44px;
     font-size: 28px;
+    color: #eeeeee;
 }
 
 .brandMenu .brandMobile {
