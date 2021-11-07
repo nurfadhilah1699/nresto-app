@@ -36,6 +36,8 @@ body {
 	background: none;
     font-size: 28px;
     color: #eeeeee;
+    min-height: 44px;
+    min-width: 44px;
 }
 
 .brandMenu .brandMobile {
@@ -200,11 +202,15 @@ main {
     font-size: 12px;
 	border-radius: 5px;
 	background-color: #334257;
-	padding: 4px 10px 4px;
 	color: #eeeeee;
+    padding: 5px;
 	font-weight: 500;
     text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .katalogItemContent {
 	padding: 16px;
     display: flex;
@@ -232,7 +238,6 @@ main {
 .ratingNumber {
 	color: orange;
     font-size: 12px;
-	text-decoration: none;
 }
 
 .katalogItemName {
@@ -241,6 +246,7 @@ main {
 	margin-top: 8px;
 	transition: 0.3s opacity;
     text-transform: capitalize;
+    height: 45px;
 }
 
 .katalogItemName:hover {
@@ -252,7 +258,6 @@ main {
 	color: inherit;
 }
 .katalogItemDescription {
-    margin-top: 14px;
 	font-size: 12px;
 	line-height: 1.5em;
 }
@@ -278,13 +283,29 @@ footer {
     font-size: 20px;
 }
 
+.skipLink:focus {
+    top: 0;
+}
+
 .katalogItemDescription + .location:focus {
 	outline: 2px solid black;
     border-radius: 5px;
 }
 
-a button:focus {
-    min-width: 44px;
+.location,
+.katalogItemName > a {
     min-height: 44px;
+    min-width: 44px;
 }
+
+.katalogItemName > a {
+    padding-top: 23px;
+    padding-bottom: 23px;
+} 
+
+.katalogItemName:focus {
+    padding-top: -23px;
+}
+
+
 
