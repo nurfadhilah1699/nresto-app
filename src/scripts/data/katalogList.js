@@ -6,7 +6,7 @@ import ('../../DATA.json').then(({default: katalogJson}) => {
         dataKatalog +=`
         <article class="katalogItem">
             <img class="katalogItemThumbnail" src="${katalog['pictureId']}" alt="${katalog['name']}" title="${katalog['name']}">
-            <div class="location" tabindex="0">${katalog['city']}</div>
+            <div class="location" tabindex="0">⭐️ ${katalog['rating']}</div>
             <div class="katalogItemContent">
                 <p class="rating">Rating : 
                     <span class="ratingNumber">${katalog['rating']}</span>
